@@ -1,0 +1,284 @@
+/************************************************
+ * Amysql FTP - AMFTP 2.5
+ * amh.sh
+ * Update:2015-08-15
+ * 
+ */
+
+body {
+	font-size: 12px;
+	font-family:Arial,宋体;
+	margin:0px;
+	padding:0px;
+	-webkit-text-size-adjust:none;
+	color:#6D8394;
+	text-shadow: white 1px 1px 0;
+}
+
+a {
+	cursor: pointer;
+	outline:none; 
+	color:#3366CC;
+	blr:expression(this.onFocus=this.blur());   /*chrome*/
+	hide-focus:expression(this.hideFocus=true); /*ie*/ 	
+	text-decoration: none;
+}
+h2 {
+	margin:0px;
+	font-size:14px;
+}
+p {
+	margin:13px;
+}
+img {
+	border:0px;
+}
+form {
+	margin:0px;
+}
+pre {
+	font-family:Arial,宋体;
+	background:#FAFAFA;
+	margin:10px;
+	padding:20px;
+	width:700px;
+	border:1px solid #DBDBDB;
+}
+select, input {
+	outline: none;
+	font-family:Arial,宋体;
+}
+.clear {
+	clear:both;
+}
+.input_button {
+	line-height:20px;
+	height:25px;
+	margin:0px;
+	padding-bottom:3px;
+}
+#content input.input_text {
+	width: 235px;
+	font-size: 12px;
+	padding: 5px;
+	font-family: Arial,宋体;
+	background: white url(../images/bg-textbox.gif) top center repeat-x;
+	color: #555;
+	border: 1px solid #ACB8CA;
+	outline: none;
+}
+
+/* header *******************************/
+
+#header {
+	width:100%;
+	margin:0px auto;
+	background:#F6F6F6;
+	padding:3px 0px 10px 0px;
+	border-bottom:1px solid #D3E2E7;
+	height:50px;
+}
+#header font{
+	float:left;
+	font-size:12px;
+}
+#header font b {
+	padding:10px;
+	font-size:23px;
+	margin-bottom:-10px;
+}
+#header font b a{
+	color:#647B9D;
+}
+#header span{
+	float:left;
+	padding-top:25px;
+}
+#header #logout {
+	float:right;
+	margin:25px 20px 0px 0px;
+}
+
+/* content *******************************/
+
+
+#content {
+	width:98%;
+	margin:15px auto;
+	padding: 0px;
+	overflow: hidden;
+}
+#content dl, #content dd, #content dt{
+	padding:0px;
+	margin:0px;
+}
+#content dl {
+	margin:5px 0px;
+}
+
+#content dl input {
+	width:200px;
+	background:#FDFEFF;
+	border:1px solid #A4BCCA;
+	padding:5px;
+	font-size:12px;
+	color:#4E6381;
+}
+#content #ftp_port {
+	width:20px;
+}
+#content #ftp_ip {
+	width:170px;
+}
+#content #notice, #content #success {
+	width: auto;
+	padding: 10px;
+	border:1px solid #D6C8C0;
+	background:#FFF0EE;
+	margin:10px 0px;
+	font-size:14px;
+	line-height:19px;
+}
+#content #success {
+	background:#F4FFE8;
+	border:1px solid #D9E0D2;
+}
+#content .title {
+	font-size:12px;
+	background:#F0F4F7;
+	padding:7px 17px;
+	margin:0px;
+}
+
+#content #rawlist {
+	width:100%;
+}
+
+#content #rawlist td {
+	padding:3px 15px;
+}
+#content #rawlist th {
+	font-weight:normal;
+	background:#F5F8FA;
+	padding:4px 18px;
+	text-align:left;
+}
+#content #rawlist th a{
+	display: inline-block;
+	width: 99%;
+}
+#content #rawlist .file_type{
+	margin-bottom:-3px;
+	float:left;
+	margin-right:4px;
+}
+
+#content .row {
+	background:#F8F8F8;
+}
+#content .trmove {
+	background:#FCF4E4;
+}
+
+
+#upload_block {
+	display:none;
+	height: 18px;
+}
+#upload_block object{
+	margin-bottom: -6px; 
+	-margin-bottom: -2px; 
+}
+#upload_notice {
+	/*margin-top: 8px; 
+	float: left;*/
+}
+
+.file_name {
+	float:left;
+	width:250px;
+	word-wrap: break-word; word-break: normal; 
+}
+.file_name_input {
+	font-size:12px;
+	padding:0px 1px;
+	margin-top: -1px;
+	width:80%;
+}
+.action_ico {
+	width:10px;
+	height:10px;
+	background:url(../images/action.png);
+	display:inline-block;
+	margin-bottom:-2px;
+	margin-right:8px;
+	float:right;
+} 
+.edit {
+	background-position: 0 -5px;
+}
+.edit_hover {
+	background-position: 0 -24px;
+}
+.rename {
+	background-position: 0 -44px;
+}
+.rename_hover {
+	background-position: 0 -64px;
+}
+.download {
+	background-position: 0 -128px;
+}
+.download_hover {
+	background-position: 0 -147px
+}
+.delete {
+	background-position: 0 -87px;
+}
+.delete_hover {
+	background-position: 0 -108px;
+}
+
+#file_content {
+	margin:3px 2px;
+	color:#3E3E3E;
+	padding:7px;
+	background: white url(../images/bg-textbox.gif) top center repeat-x;
+	border: 1px solid #ACB8CA;
+	overflow-y: scroll;
+	outline: none;
+	font-size:12px;
+	height:500px;
+	width:100%;
+}
+
+#move_block {
+	display:none;
+	margin:10px 0px;
+}
+
+.block {
+	background-color: rgb(255, 255, 255);
+	background: white url(../images/bg-textbox.gif) top center repeat-x;
+	width: 978px;
+	padding: 10px;
+	border: 1px solid rgb(230, 230, 230);
+}
+#permissions_block {
+	margin:10px 0px;
+	display:none;
+}
+#new_block, #remote_download_block {
+	margin:10px 0px;
+	display:none;
+}
+
+/* footer *******************************/
+
+
+#footer {
+	margin:0px auto;
+	text-align:left;
+	font-size:12px;
+	width: 98%;line-height:20px;color:#A5A5A5
+}
